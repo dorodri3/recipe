@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Kode+Mono:wght@400..700&family=Montserrat+Alternates:wght@700&family=Montserrat:ital@0;1&display=swap');
+
+
+
+html {
+
+background-color: rgba(122, 191, 191, .5);
+
+}
+
+
+
+body {
+
+    background-color: #f2f2f2;
+    width: 414px;  
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+
+}
+
+#home {
+    background-color: #EB5428;
+    
+}
+
+#hamburger {
+    background-color: #f2f2f2;
+}
+
+
+
+main {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    margin-top:100px;
+    padding:100px;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    
+    text-align: center;
+    font-size:30px;
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size:25px;
+}
+
+div {
+    width: auto;
+}
+
+div li {
+    width: auto;
+}
+
+
+
+
+
+
+
+label[for="dropdown"] {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+   
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+#dropdown {
+    display: none;
+}
+
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#dropdown:checked + label + ul {
+    display: block;
+    background-color: #7abfbf;
+    height: auto;
+
+}
+
+
+nav ul li {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+nav ul li a img {
+    max-height: 50px;
+    max-width: 50px;  
+    width: auto;     
+    height: auto;    
+}
+
+
+.mainnav {
+    position: fixed; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%; 
+    max-width: 1200px; 
+    padding: 10px; 
+    z-index: 1000; 
+    background-color:  transparent; 
+  }
+
+  #search {
+    
+    border: 2px solid #EB5428;
+    display: inline-flex; 
+    align-items: stretch; 
+    padding: 0; 
+    
+  }
+  
+  #searchInput {
+    height: 40px; 
+    border: none; 
+    padding: 0 10px; 
+    flex-grow: 1; 
+    outline: none; 
+  }
+  
+  #searchButton {
+    height:40px;
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding: 0; 
+  }
+  
+  .icon-tabler-search {
+    height: 24px; 
+    width: 24px; 
+  }
+
+
+
+
+
+  
+
+
+.actions  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.actions  button:hover {
+    color: #7abfbf;
+
+}
+
+.actions a:hover {
+    color: #7abfbf;
+
+}
+
+
+.actions li {
+    flex-direction: column-reverse;
+    font: 16px "bebas neue";
+    color: #EB5428;
+    display: flex; 
+    text-align: center; 
+}
+
+.actions button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.actions svg {
+    margin-bottom: 5px; 
+    align-self: center; 
+}
+
+.actions button ,a[href="#recipe"] {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center; 
+    font-family: "Montserrat Alternates", sans-serif;  
+    font-weight: bold;
+    color: #eb5428;
+   
+  
+}
+
+#social-links {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+    
+    
+}
+
+#social-links h3 {
+    margin-bottom: 20px; 
+}
+
+#social-links svg {
+    margin-bottom: 5px; 
+}
+
+
+
+
+
+
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+   
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin: 8px;
+   
+}
+
+dd {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+dt {
+    font-family: "Montserrat Alternates", sans-serif;  
+    
+}
+
+
+#ingredients ul {
+    font-family: "Montserrat", sans-serif;
+}
+
+#directions {
+    padding: 10px;
+
+
+
+}
+
+#directions {
+    margin-left: 8px;
+}
+
+
+#directions ol {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px 10px; 
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+#dishes {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #7abfbf;
+}
+
+
+#dishes figure {
+    display: flex; 
+        align-items: center; 
+        gap: 10px;
+    } 
+
+
+#dishes img {  
+    width: 100px;
+    max-width: 100px; 
+        height: auto;
+    
+}
+
+.bold{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+}
+
+
+
+
+#connect a {
+    color: #EB5428;
+    font-weight: bold;
+    font: 16px "bebas neue";
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 5px; 
+    align-self: center; 
+}
+
+#connect a:hover {
+    color: #7abfbf;
+
+
+
+}
+
+
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+}
+
+footer img {
+    width: 70%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 10px; 
+}
+
+footer p {
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .street.tacos {
+        display: flex; 
+        flex-direction: row;
+        align-items: flex-start; 
+        justify-content: space-between; 
+        width: 100%; 
+    }
+
+    .actions {
+        flex-direction: column; 
+        order: -1; 
+        padding-right: 20px;
+    }
+
+    .actions ul {
+        padding: 0; 
+    }
+
+    .street.tacos img {
+        width: 50%; 
+        height: auto; 
+    }
+
+    .street.tacos + p {
+        width: 50%; 
+        padding-left: 20px; 
+    }
+
+    #dishes {
+        display: flex; 
+        justify-content: flex-start; 
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+    }
+
+    #dishes section {
+        flex: 0 0 auto; 
+    }
+
+
+    .directions-container {
+        display:flex;
+        text-align: center;
+        background-color:#0d0d0d;
+        color:#7abfbf
+    }
+
+    .directions-container h2 {
+        text-align: center;
+        color: #7abfbf;
+    }
+
+    .mainnav nav ul {
+        display: flex; 
+        justify-content: center; 
+        padding: 0; 
+        list-style-type: none; 
+    }
+
+    .mainnav nav ul li {
+        display: inline-block; 
+        padding: 10px; 
+        border-bottom: none; 
+    }
+
+   
+    #dropdown:checked + label + ul, 
+    nav ul {
+        display: flex;
+        background-color: #7abfbf; 
+    }
+
+    
+    #dropdown, label[for="dropdown"] {
+        
+        display: none;
+    }
+
+    #dishes {
+        display: flex; 
+        width:auto;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        justify-content: flex-start; 
+        align-items: center; 
+        
+    }
+    
+    #dishes section {
+      
+        flex: 0 0 auto; 
+    }
+    
+    #dishes img {
+        width: auto; 
+        height: auto;
+        display: block; 
+    }
+
+    
+
+   
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px)  {
+    
+    body{
+        width: 768px;
+    }
+
+
+    .recipe-content {
+        display: flex;
+        flex-direction: row; 
+        gap: 20px; 
+    }
+
+    #ingredients, #directions {
+        flex: 1; 
+    }
+}
+
+@media print {
+ 
+    @page {
+        margin: 0.5in; 
+    }
+
+    
+
+    body, h1, h2, h3, p, li, dt, dd {
+        font-family: "Times New Roman", Times, serif !important;
+        font-size: 5pt; 
+        line-height: 0.5; 
+    }
+
+   
+    nav, .mainnav, #hamburger, .actions, footer, .visually-hidden, #social-links, .non-essential-class {
+        display: none !important;
+    }
+
+    
+    img {
+        filter: grayscale(100%);
+        max-width: 100px !important; 
+        max-height: 100px !important;
+        page-break-inside: avoid;
+    }
+
+   
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+   
+    main, article, section, div, p, ul, ol {
+        margin: 2pt 0 !important;
+        padding: 0 !important;
+    }
+
+    li {
+        margin-bottom: 1pt !important; 
+    }
+
+ 
+   
+    
+    h1, h2, h3, p, div, section, img {
+        page-break-inside: avoid;
+    }
+
+    #search {
+        display: none;
+    }
+
+    
+}
